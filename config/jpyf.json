@@ -1,5 +1,7 @@
 {
-  "description": "Ropsten deployment",
+  "description": "JPYF deployment",
+  "omniaFromAddr": "",
+  "omniaAmount": "",
   "pauseDelay": "60",
   "vat_line": "5000000",
   "vow_wait": "561600",
@@ -24,27 +26,19 @@
   "flash_max": "500000000",
   "flash_toll": "0.05",
   "tokens": {
-    "FAU": {
+    "ETH": {
       "import": {
-        "gem": "0xFab46E002BbF0b4509813474841E0716E6730136"
+        "pip": "0xa792b03bF1Eb7767a74450e5A0b97aa39860f467"
+      },
+      "gemDeploy": {
+        "src": "ds-weth/WETH9_",
+        "params": [],
+        "faucetSupply": "0",
+        "faucetAmount": "0"
       },
       "joinDeploy": {
         "src": "GemJoin",
         "extraParams": []
-      },
-      "pipDeploy": {
-        "osmDelay": "300",
-        "type": "value",
-        "price": "50",
-        "signers": [
-          "0x005B903dAdfD96229CBa5EB0e5Aa75C578e8F968",
-          "0x25310bC78B9347F97DC664b46E5D4602a6De5f2C",
-          "0x74B12Eeb596831796Beb1B36FC96DCCa815523B8",
-          "0xe709290634dE56a55d9826d35A9e677Fea5422EC",
-          "0x18753d13f14b80eb3d8ea96d4367957bb588d410",
-          "0x5874f6a09271cdb4e1a13ef3d402df6912863244",
-          "0x62ccadc1187593d0553398fabfa7ba41eb435ad2"
-        ]
       },
       "ilks": {
         "A": {
